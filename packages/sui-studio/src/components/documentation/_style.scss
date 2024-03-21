@@ -1,0 +1,47 @@
+.sui-StudioProps {
+  &-prop {
+    padding: 0 16px 24px 0;
+  }
+
+  &-tag {
+    display: inline-flex;
+    margin: 0 16px 8px 0;
+  }
+
+  &-tag span {
+    background: $bgc-tag;
+    border-radius: 3px;
+    color: $c-gray;
+    font-size: $fz-s;
+    padding: 4px 8px;
+
+    &:first-child {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      color: $c-white;
+    }
+  }
+
+  &-required span:last-child {
+    background: $c-green;
+
+    &.is-required {
+      background: $c-accent;
+    }
+  }
+
+  &-default span:last-child {
+    background: $c-black;
+    font-family: monospace;
+  }
+
+  &-type span:last-child {
+    background: $c-primary;
+    font-family: monospace;
+  }
+}

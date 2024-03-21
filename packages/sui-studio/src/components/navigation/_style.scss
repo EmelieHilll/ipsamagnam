@@ -1,0 +1,60 @@
+.sui-StudioNav {
+  &-header {
+    align-items: center;
+    display: flex;
+    height: 65px;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  &-searchInput {
+    border: 1px solid $c-gray-lightest;
+    border-radius: 15px;
+    color: #666;
+    font-size: 12px;
+    margin: 0 5%;
+    outline: none;
+    padding: 4px 4px 4px 8px;
+    width: 80%;
+
+    &:focus {
+      background-color: $c-white;
+      border: 1px solid $c-gray-light;
+    }
+  }
+
+  &-menu {
+    list-style: none;
+    padding-left: 16px;
+
+    &Link {
+      border-left: 1px solid #e4e4e4;
+      color: $c-gray-dark;
+      display: block;
+      padding: 5px 16px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: rgba($c-primary, 0.05);
+        border-left-color: $c-primary;
+        color: $c-primary;
+      }
+      &--active {
+        background-color: rgba($c-primary, 0.1);
+        border-left-color: darken($c-primary, 10%);
+        color: darken($c-primary, 10%);
+        pointer-events: none;
+      }
+
+      &Item {
+        display: flex;
+      }
+    }
+
+    &Title {
+      color: $c-black;
+      padding-bottom: 10px;
+      padding-top: 20px;
+    }
+  }
+}

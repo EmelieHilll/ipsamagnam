@@ -1,0 +1,33 @@
+{
+  "name": "@s-ui/js",
+  "version": "2.20.0",
+  "description": "Set of JS utilities",
+  "scripts": {
+    "lib": "npx rimraf ./lib && ../../node_modules/.bin/babel --presets sui ./src --out-dir ./lib",
+    "prepare": "npm run lib"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "bowser": "2.11.0",
+    "cookie": "0.3.1",
+    "htmr": "0.8.8",
+    "js-cookie": "2.1.4",
+    "just-camel-case": "4.0.2",
+    "just-capitalize": "1.0.0",
+    "just-kebab-case": "1.1.0",
+    "lodash.debounce": "4.0.8",
+    "lodash.throttle": "4.1.1",
+    "qs": "6.7.0",
+    "remove-accents": "0.4.2"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUI-Components/sui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SUI-Components/sui/issues"
+  },
+  "homepage": "https://github.com/SUI-Components/sui/tree/master/packages/sui-js#readme"
+}

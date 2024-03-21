@@ -1,0 +1,68 @@
+{
+  "name": "@s-ui/studio",
+  "version": "9.26.0",
+  "description": "Develop, maintain and publish your SUI components.",
+  "main": "index.js",
+  "bin": {
+    "sui-studio": "./bin/sui-studio.js"
+  },
+  "scripts": {
+    "phoenix": "npx rimraf node_modules && npm it",
+    "lint:js": "linting-rules js",
+    "lint:sass": "linting-rules sass",
+    "lint": "npm run lint:js && npm run lint:sass",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "7.12.10",
+    "@babel/standalone": "7.12.12",
+    "@s-ui/bundler": "7",
+    "@s-ui/helpers": "1",
+    "@s-ui/mono": "1",
+    "@s-ui/react-context": "1",
+    "@s-ui/react-router": "1",
+    "@s-ui/test": "4",
+    "@testing-library/react": "10.0.4",
+    "@testing-library/react-hooks": "4.0.1",
+    "@testing-library/user-event": "10.0.1",
+    "chai": "4.2.0",
+    "chai-dom": "1.8.2",
+    "classnames": "2.2.5",
+    "codemirror": "5.59.0",
+    "colors": "1.4.0",
+    "commander": "6.2.1",
+    "cpx": "1.5.0",
+    "cpy": "8.1.1",
+    "deepmerge": "4.2.2",
+    "fast-glob": "3.2.4",
+    "fs-extra": "9.0.1",
+    "hoist-non-react-statics": "3.3.2",
+    "just-debounce-it": "1.1.0",
+    "just-kebab-case": "1.1.0",
+    "just-pascal-case": "1.1.0",
+    "normalize.css": "8.0.1",
+    "raw-loader": "4.0.2",
+    "react": "16",
+    "react-dom": "16",
+    "react-docgen": "5.3.1"
+  },
+  "config": {
+    "sui-bundler": {
+      "vendor": [
+        "react",
+        "react-dom",
+        "runtime-regenerator"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUI-Components/sui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SUI-Components/sui/issues"
+  },
+  "homepage": "https://github.com/SUI-Components/sui/tree/master/packages/sui-studio#readme"
+}

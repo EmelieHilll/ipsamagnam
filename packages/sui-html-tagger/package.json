@@ -1,0 +1,21 @@
+{
+  "name": "@s-ui/html-tagger",
+  "version": "1.7.0",
+  "description": "Tool to tag HTML elements",
+  "main": "lib/",
+  "scripts": {
+    "lib": "npm run lib:js",
+    "lib:js": "npx rimraf ./lib && ../../node_modules/.bin/babel ./src --out-dir ./lib",
+    "prepare": "npm run lib"
+  },
+  "keywords": [
+    "data-rel",
+    "tags",
+    "service"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "just-debounce-it": "1.1.0"
+  }
+}

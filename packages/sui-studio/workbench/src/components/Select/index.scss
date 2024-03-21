@@ -1,0 +1,17 @@
+.Select {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 8px;
+
+  span {
+    font-size: 12px;
+    padding-right: 4px;
+    font-weight: 500;
+  }
+
+  select {
+    border: 0;
+    width: 80px;
+  }
+}

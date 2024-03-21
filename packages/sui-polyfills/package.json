@@ -1,0 +1,20 @@
+{
+  "name": "@s-ui/polyfills",
+  "version": "1.13.0",
+  "description": "Common polyfills for your project",
+  "main": "src/index.js",
+  "scripts": {},
+  "keywords": [],
+  "dependencies": {
+    "core-js": "3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUI-Components/sui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SUI-Components/sui/issues"
+  },
+  "homepage": "https://github.com/SUI-Components/sui/tree/master/packages/sui-polyfills#readme"
+}
